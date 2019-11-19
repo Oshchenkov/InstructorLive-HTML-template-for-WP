@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header ">
     <div class="container">
       <div class="top-header">
         <div class="top-header__logo-block">
@@ -64,17 +64,68 @@
             </ul>
           </div>
           <div class="top-header__nav-block-btn">
-            <button class="navbar-toggler">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"
-                focusable="false">
-                <title>Menu</title>
-                <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
-                  d="M4 7h22M4 15h22M4 23h22"></path>
-              </svg>
+            <button class="navbar-toggler" id="top-navbar-btn">
+              <div class="navbar-toggler__burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"
+                  focusable="false">
+                  <title>Menu</title>
+                  <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                    d="M4 7h22M4 15h22M4 23h22"></path>
+                </svg>
+              </div>
+              <div class="navbar-toggler__close">
+                &times;
+              </div>
+
             </button>
           </div>
-
         </div>
+      </div>
+    </div>
+    <div class="container mobile-nav-container">
+      <div class="mobile-nav-container__menu">
+        <ul class="vertical-nav">
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a">
+              Home
+            </a>
+          </li>
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a">
+              Instructors
+            </a>
+          </li>
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a">
+              Programmes
+            </a>
+          </li>
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a">
+              Blog
+            </a>
+          </li>
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a">
+              Pricing
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-nav-container__btn">
+        <ul class="vertical-nav">
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a btn-il ">
+              Start your free trial
+            </a>
+          </li>
+          <li class="vertical-nav__li">
+            <a href="#" class="vertical-nav__a btn-il btn-il_invert">
+              Login
+            </a>
+          </li>
+
+        </ul>
       </div>
     </div>
   </header>
