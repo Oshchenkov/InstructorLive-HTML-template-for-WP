@@ -5,7 +5,7 @@
 // @import "reboot" if used bootstrap 4 do not need include twice
 @import "media" // Always at the end
 
-
+@import "blog" 
 //
 // ROOT
 //
@@ -14,9 +14,9 @@ body
 
 @media (min-width: 1400px)
   .container
-    max-width: initial
     padding-left: 5vw
     padding-right: 5vw
+    max-width: 1460px
 
 
 
@@ -27,7 +27,7 @@ body
 .header
   box-shadow: 0 0 1px 1px rgba(34,45,57,.15)
   position: fixed
-  z-index: 1
+  z-index: 99
   top: 0
   left: 0
   right: 0
@@ -225,7 +225,15 @@ body
 .main
   padding-top: 100px
 
-  
+.section_padding
+  padding: 100px 0
+
+
++media-breakpoint-down($md)
+  .section_padding
+    padding: 30px 0
+
+
 
 //
 // FOOTER
@@ -288,6 +296,8 @@ body
 +media-breakpoint-down($md)
   .footer-widget
     grid-template-columns: 1fr 
+  .copyright
+    text-align: center
 
 
 
