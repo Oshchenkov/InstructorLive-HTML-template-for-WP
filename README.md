@@ -6,6 +6,8 @@
 
 [Blog](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog.html)
 
+[Blog Article](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog-article.html)
+
 ## OptimizedSassTemplate
 
 [Optimized SASS template](https://github.com/Oshchenkov/OptimizedSassTemplate) with gulp. Ready for gitHub /doc demo show.

@@ -180,13 +180,7 @@
         font-size: 25px
         text-transform: uppercase
 
-.h3
-  text-transform: uppercase
-  color: #000
-  letter-spacing: 2px
-  margin-bottom: 30px
-  font-size: 30px
-  font-family: "Gilroy-Bold"
+
 
 +media-breakpoint-down($lg)
   .categories-section
@@ -350,10 +344,11 @@
 
 .programmes-section
   &__title
-  &__content
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-gap: 40px
+.programmes-section__content,
+.related-articles__content
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 40px
 
 .programmes-item
   position: relative
@@ -381,6 +376,7 @@
       font-size: 20px
       letter-spacing: 2px
       margin-bottom: 20px
+      line-height: 1.9
     &-text
       font-size: 18px
       line-height: 30px
@@ -400,7 +396,8 @@
 
 
 +media-breakpoint-down($lg)
-  .programmes-section__content
+  .programmes-section__content,
+  .related-articles__content
     grid-template-columns: repeat(2, 1fr)
   .programmes-item__bg
     height: 300px
@@ -422,7 +419,8 @@
     font-size: 14px
 
 +media-breakpoint-down($sm)
-  .programmes-section__content
+  .programmes-section__content,
+  .related-articles__content
     grid-template-columns: minmax(150px, 350px)
     justify-content: center
   .programmes-item__content

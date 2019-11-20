@@ -6,6 +6,9 @@
 @import "media" // Always at the end
 
 @import "blog" 
+@import "blog-article" 
+
+
 //
 // ROOT
 //
@@ -264,6 +267,26 @@ body
   .btn-link
     font-size: 14px
 
+
+.h3,
+.h2
+  text-transform: uppercase
+  color: #000
+  letter-spacing: 2px
+  margin-bottom: 40px
+  font-size: 30px
+  font-family: "Gilroy-Bold"
+
+.h2
+  text-transform: none
+  font-size: 40px
+  letter-spacing: initial
+
++media-breakpoint-down($md)
+  .h2
+    font-size: 30px
+  .h3
+    font-size: 24px
 
 //
 // FOOTER
