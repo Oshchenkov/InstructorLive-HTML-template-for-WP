@@ -228,9 +228,15 @@ body
 .section_padding
   padding: 100px 0
 
+.section_padding.blog-categories-section,
+.section_padding.blog-articles
+  padding: 100px 0 40px
+
 
 +media-breakpoint-down($md)
-  .section_padding
+  .section_padding,
+  .section_padding.blog-categories-section,
+  .section_padding.blog-articles
     padding: 30px 0
 
 
