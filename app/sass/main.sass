@@ -115,6 +115,7 @@ body
   border-radius: $bdrs
   margin: 0 15px
   transition: $transition-color
+  transition: $transition-all
   &:active,
   &:hover,
   &:focus
@@ -230,13 +231,38 @@ body
 
 .section_padding_tile
   padding: 100px 0 40px
-
+.section_padding_bottom
+  padding-bottom: 100px
 
 +media-breakpoint-down($md)
   .section_padding,
   .section_padding_tile
     padding: 40px 0
+  .section_padding_bottom
+    padding-bottom: 40px
 
+.btn-link
+  font-size: 16px
+  letter-spacing: 2px
+  font-family: "Gilroy-Bold"
+  border: 2px solid $black-color
+  color: $black-color
+  text-align: center
+  border-radius: $bdrs
+  padding: 11px 30px
+  text-transform: uppercase
+  transition: $transition-all
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
+    color: $white-color
+    background-color: $accent-dark-color
+    border: 2px solid $accent-dark-color 
+
++media-breakpoint-down($md)
+  .btn-link
+    font-size: 14px
 
 
 //

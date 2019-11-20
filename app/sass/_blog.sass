@@ -298,7 +298,7 @@
   border-radius: 20px
   &__bg
     display: flex
-    max-height: 400px
+    height: 400px
     &-img
       object-position: center
       object-fit: cover
@@ -323,3 +323,107 @@
       letter-spacing: 2px
       font-size: 25px
       text-transform: uppercase
+
+
++media-breakpoint-down($xl)
+  .recipes-item__bg
+    height: 300px
++media-breakpoint-down($lg)
+  .recipes-item__bg
+    height: 200px
+  .recipes-item__content-text
+    font-size: 20px
++media-breakpoint-down($md)
+  .recipes-item__bg
+    height: 250px
+  .recipes-section__content
+    grid-template-columns: repeat(2, 1fr)
++media-breakpoint-down($md)
+  .recipes-section__content
+    grid-template-columns: minmax(150px, 350px)
+    justify-content: center
+
+
+//
+// programmes-section
+//
+
+.programmes-section
+  &__title
+  &__content
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 40px
+
+.programmes-item
+  position: relative
+  overflow: hidden
+  border-radius: $bdrs-pallet
+  box-shadow: $bx-sh
+  &__bg
+    display: flex
+    height: 300px
+    &-img
+      object-position: center
+      object-fit: cover
+      width: 100%
+      height: auto
+  &__content
+    display: flex
+    flex-direction: column
+    height: calc( 100% - 300px )
+    justify-content: space-between
+    padding: 40px
+    font-family: "Gilroy-SemiBold"
+    &-title
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      font-size: 20px
+      letter-spacing: 2px
+      margin-bottom: 20px
+    &-text
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 30px
+    &-btn
+
+
++media-breakpoint-down($xl)
+  .programmes-section__content
+  .programmes-item__bg
+    height: 250px
+  .programmes-item__content
+    height: calc( 100% - 250px)
+  .programmes-item__content-text
+    font-size: 16px
+    line-height: 26px
+
+
++media-breakpoint-down($lg)
+  .programmes-section__content
+    grid-template-columns: repeat(2, 1fr)
+  .programmes-item__bg
+    height: 300px
+  .programmes-item__content
+    height: calc( 100% - 300px)
+
++media-breakpoint-down($md)
+  .programmes-item__bg
+    height: 250px
+  .programmes-item__content
+    height: calc( 100% - 250px)
+  .programmes-item__content
+    padding: 30px
+  .programmes-item__content-title
+    font-size: 16px
+  .programmes-item__content-text
+    font-size: 14px
+  .btn-link
+    font-size: 14px
+
++media-breakpoint-down($sm)
+  .programmes-section__content
+    grid-template-columns: minmax(150px, 350px)
+    justify-content: center
+  .programmes-item__content
+    padding: 40px
