@@ -1,0 +1,145 @@
+//
+// blog-recipes
+//
+
+.blog-recipes-section .blog-hero-full-slide
+  max-width: initial
+.blog-recipes-section .blog-hero-full-slide__TITLE
+  text-align: center
+  font-size: 90px
+  letter-spacing: 5px
+  text-transform: uppercase
+
++media-breakpoint-down($xl)
+  .blog-recipes-section .blog-hero-full-slide__TITLE
+    font-size: 60px
++media-breakpoint-down($md)
+  .blog-recipes-section .blog-hero-full-slide__TITLE
+    font-size: 40px
+
+//
+// recipes-status-section
+//
+
+.recipes-status-section
+  background-color: $accent-dark-color
+  width: 100%
+  position: sticky
+  top: 100px
+
+.recipes-status-container
+  color: #fff
+  display: grid
+  grid-template-columns: repeat(4, 1fr )
+  padding: 25px 0
+  grid-gap: 40px
+  
+.recipes-status-item
+  display: flex
+  align-items: center
+  &__icon
+    margin-right: 20px
+    width: 50px
+    height: 50px
+    &-img
+      width: 100%
+      height: auto
+  &__content
+    &-title
+      text-transform: uppercase
+      letter-spacing: 2px
+      font-size: 16px
+      font-family: "Gilroy-Bold"
+      line-height: normal
+    &-state
+      font-family: "Gilroy-SemiBold"
+      font-size: 20px
+
+
++media-breakpoint-down($xl)
+  .recipes-status-item__icon
+    width: 30px
+    height: 30px
+  .recipes-status-item__content-title
+    font-size: 14px
+  .recipes-status-item__content-state
+    font-size: 16px
++media-breakpoint-down($lg)
+  .recipes-status-item__icon
+    width: 30px
+    height: 30px
+    margin-right: 10px
+  .recipes-status-item__content-title
+    font-size: 12px
+  .recipes-status-item__content-state
+    font-size: 14px
++media-breakpoint-down($md)
+  .recipes-status-section
+    position: relative
+    top: 0
+  .recipes-status-container
+    grid-template-columns: repeat(2, 1fr )
+
+//
+// blog-recipes-content
+//
+
+.blog-recipes-content
+  display: grid
+  grid-template-columns: 1fr 1.5fr
+  grid-gap: 60px 120px
+  
+.blog-recipes-content-container
+  margin-bottom: 80px
+  &__title
+  &__content
+
+.blog-recipes-content-container__content ul,
+.blog-content-list
+  list-style: none
+  padding-left: 0
+  margin-bottom: 0
+
++media-breakpoint-down($xl)
+  .blog-recipes-content
+    grid-template-columns: 1fr
+
+
+.recipes-table
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap:  40px 0
+  margin: 40px 0 0
+  &__row
+
+.recipes-table-title
+  display: grid
+  grid-template-columns: 2fr 1fr 1fr
+  line-height: 1
+  font-family: "Gilroy-Bold"
+  text-transform: uppercase
+  font-size: 16px
+  &__col
+    text-align: center
+.recipes-table-title__col:first-child
+  text-align-last: left
+  letter-spacing: 2px
+  
+
+.recipes-table__row
+  display: flex
+  flex-direction: column
+  &-sub
+
+.recipes-table__row-sub
+  display: grid
+  grid-template-columns: 2fr 1fr 1fr
+  &-col
+
+.recipes-table__row-sub-col
+  text-align: center
+.recipes-table__row-sub-col:first-child
+  text-align-last: left
+
+.recipes-table-col-title
+  font-family: "Gilroy-Bold"

@@ -72,16 +72,19 @@
 //
 
 .blog-content
-
-.blog-content-inner
-  width: 50%
-  max-width: 560px
   display: flex
   flex-direction: column
   margin: 0 auto
   font-size: 20px
   font-family: "Gilroy-SemiBold"
   line-height: 2
+.blog-content-inner
+  width: 50%
+  max-width: 560px
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  
 .blog-content p
   margin-bottom: 2rem
 .blog-content img
@@ -108,7 +111,7 @@ blockquote
     width: 80%
   
 +media-breakpoint-down($md)
-  .blog-content-inner
+  .blog-content
     font-size: 16px
   .blog-content p
     margin-bottom: 1rem
@@ -128,3 +131,4 @@ blockquote
 
 .related-articles__content .programmes-item__bg-img
   object-position: center top
+
