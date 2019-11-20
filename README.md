@@ -1,8 +1,16 @@
-# OptimizedSassTemplate
+# HTML TEMPLATE InstructorLive for WordPress theme template
+
+## Demo pages:
+
+[Home](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/)
+
+[Blog](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog.html)
+
+## OptimizedSassTemplate
 
 [Optimized SASS template](https://github.com/Oshchenkov/OptimizedSassTemplate) with gulp. Ready for gitHub /doc demo show.
 
-## For installing you need:
+### For installing you need:
 
 Run in terminal(need to have installed npm)
 
