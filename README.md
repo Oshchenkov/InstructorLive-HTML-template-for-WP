@@ -8,6 +8,8 @@
 
 [Blog Article](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog-article.html)
 
+[Blog Recipes](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog-recipes.html)
+
 ## OptimizedSassTemplate
 
 [Optimized SASS template](https://github.com/Oshchenkov/OptimizedSassTemplate) with gulp. Ready for gitHub /doc demo show.
