@@ -1,0 +1,204 @@
+//
+// sticky-instructors-section
+//
+
+.sticky-instructors-section
+  position: sticky
+  top: 100px
+  z-index: 10
+  background-color: $accent-dark-color
+
+.sticky-instructors-container
+  
+  color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100px
+  &__instructor-block
+  &__btns
+
+.instructor-status-block
+  display: flex
+  align-items: center
+  &__icon
+    width: 50px
+    height: 50px
+    margin-right: 20px
+    &-img
+      display: inline-block
+      width: 100%
+      height: auto
+      border: 2px solid #ffffff
+      border-radius: 50%
+  &__content
+    &-title
+      font-size: 16px
+      letter-spacing: 2px
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      
+    &-name
+      font-size: 20px
+      line-height: normal
+
+.sticky-instructors-container__btns a
+  margin: 0 10px
+.sticky-instructors-container__btns a:first-child
+  margin-left: 0
+.sticky-instructors-container__btns a:last-child
+  margin-right: 0
+
++media-breakpoint-down($lg)
+  .instructor-status-block__content
+    display: none
+  .btn-accent
+    font-size: 10px
+
++media-breakpoint-down($sm)
+  .sticky-instructors-container__btns
+    display: flex
+    flex-direction: column
+  .sticky-instructors-container__btns .btn-accent
+    font-style: 8px
+    padding: 2px 10px
+    margin: 5px 0
+    text-align: center
+
+//
+// leigh-workouts-section
+//
+
+.leigh-workouts-section
+  background-color: $accent-color
+
+.pallet-conteiner
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 40px
+
+.pallet-item
+
+.pallet-item-short
+  background-color: #fff
+  position: relative
+  overflow: hidden
+  border-radius: $bdrs-pallet
+  box-shadow: $bx-sh
+  &__bg
+    display: flex
+    height: 300px
+    &-img
+      object-position: center
+      object-fit: cover
+      width: 100%
+      height: auto
+  &__content
+    display: flex
+    flex-direction: column
+    padding: 40px
+    font-family: "Gilroy-SemiBold"
+    &-title
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      font-size: 20px
+      letter-spacing: 2px
+      margin-bottom: 20px
+      line-height: 1.9
+    &-text
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 30px
+    &-btn
+
+.leigh-workouts-section .pallet-item-short__bg-img
+  object-position: center top
+
+
++media-breakpoint-down($xl)
+  .pallet-item-short__bg
+    height: 250px
+  .pallet-item-short__content-text
+    font-size: 16px
+    line-height: 1.6
+
++media-breakpoint-down($lg)
+  .pallet-conteiner
+    grid-template-columns: repeat(2, 1fr)
+  .pallet-item-short__bg
+    height: 300px
+
++media-breakpoint-down($md)
+  .pallet-item-short__bg
+    height: 250px
+  .pallet-item-short__content
+    padding: 30px
+  .pallet-item-short__content-title
+    font-size: 16px
+  .pallet-item-short__content-text
+    font-size: 14px
+
++media-breakpoint-down($sm)
+  .pallet-conteiner
+    grid-template-columns: minmax(150px, 350px)
+    justify-content: center
+  .pallet-item-short__content
+    padding: 40px
+
+
+//
+// hero-text-image-section
+//
+
+.hero-text-image-section
+  position: relative
+  height: 600px
+  width: 100%
+  &__bg
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    display: flex
+    &-img
+      width: 100%
+      height: auto
+      object-fit: cover
+      object-position: center top
+  &__content
+    position: absolute;
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 2
+    background-image: $blackout-img
+
+.hero-text-image-section__content>.container
+  height: 100%
+
+.hero-text-image-content
+  display: flex
+  flex-direction: column
+  max-width: 840px
+  height: 100%
+  justify-content: center
+  &__title
+    
+  &__subtitle
+    color: #fff
+    font-family: "Gilroy-SemiBold"
+    margin-bottom: 100px
+    font-size: 30px
+  &__btn
+
++media-breakpoint-down($xl)
+  .hero-text-image-content__subtitle
+    margin-bottom: 50px
+    font-size: 24px
+
++media-breakpoint-down($md)
+  .hero-text-image-section__bg-img
+    object-position: right top

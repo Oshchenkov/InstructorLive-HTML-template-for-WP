@@ -10,11 +10,13 @@
 
 [Blog Recipes](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/blog-recipes.html)
 
-## OptimizedSassTemplate
+[Instructors Article](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/instructors-article.html)
+
+### OptimizedSassTemplate
 
 [Optimized SASS template](https://github.com/Oshchenkov/OptimizedSassTemplate) with gulp. Ready for gitHub /doc demo show.
 
-### For installing you need:
+#### For installing you need:
 
 Run in terminal(need to have installed npm)
 
