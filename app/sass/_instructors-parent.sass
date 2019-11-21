@@ -1,0 +1,111 @@
+//
+// blog-instructors-parent-section
+//
+
+
+.blog-instructors-parent-section .blog-hero-full-slide__TITLE,
+.blog-instructors-section .blog-hero-full-slide__TITLE
+  text-align: center
+  font-size: 90px
+  letter-spacing: 5px
+  text-transform: uppercase
+  
+
+.blog-instructors-parent-section .blog-hero-full-slide,
+.blog-instructors-section .blog-hero-full-slide
+  max-width: initial  
+
+
++media-breakpoint-down($xl)
+  .blog-instructors-parent-section .blog-hero-full-slide__TITLE,
+  .blog-instructors-section .blog-hero-full-slide__TITLE
+    font-size: 60px
++media-breakpoint-down($md)
+  .blog-instructors-parent-section .blog-hero-full-slide__TITLE,
+  .blog-instructors-section .blog-hero-full-slide__TITLE
+    font-size: 40px
++media-breakpoint-down($sm)
+  .blog-instructors-parent-section .blog-hero-full-slide__TITLE,
+  .blog-instructors-section .blog-hero-full-slide__TITLE
+    font-size: 34px
+
+
+
+
+.blog-hero-full-slide__subtitle
+  text-align: center
+  font-size: 25px
+  margin-bottom: 30px
+  font-family: "Gilroy-Regular"
+.blog-hero-full-slide__btn
+  text-align: center
+
++media-breakpoint-down($md)
+  .blog-hero-full-slide__subtitle
+    font-size: 20px
+  .btn-il.btn-il_content
+    padding: 10px 20px
+    font-size: 14px
+
++media-breakpoint-down($sm)
+  .hero-text-image-content__btn
+    text-align: center
+
+//
+// parent-instructors-section
+//
+
+.parent-instructors-section
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 40px
+
+.parent-instructors-item
+  position: relative
+  overflow: hidden
+  border-radius: 20px
+  &__bg
+    display: flex
+    height: 400px
+    
+    &-img
+      width: 100%
+      height: auto
+      object-fit: cover
+      object-position: center top
+  &__content
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 2
+    color: #fff
+    background-image: $blackout-img
+    &-text
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 100%
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      letter-spacing: 2px
+      font-size: 40px
+
++media-breakpoint-down($lg)
+  .parent-instructors-item__bg
+    height: 250px
+  .parent-instructors-item__content-text
+    font-size: 30px
++media-breakpoint-down($md)
+  .parent-instructors-item__bg
+    height: 150px
+  .parent-instructors-item__content-text
+    font-size: 20px
+
++media-breakpoint-down($sm)
+  .parent-instructors-section
+    grid-template-columns: minmax(150px, 350px)
+    justify-content: center
+  .parent-instructors-item__bg
+    height: 200px
