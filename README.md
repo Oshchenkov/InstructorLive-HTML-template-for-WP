@@ -14,6 +14,8 @@
 
 [Instructors Parent](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/instructors-parent.html)
 
+[Programme Parent](https://oshchenkov.github.io/InstructorLive-HTML-template-for-WP/programme-parent.html)
+
 ### OptimizedSassTemplate
 
 [Optimized SASS template](https://github.com/Oshchenkov/OptimizedSassTemplate) with gulp. Ready for gitHub /doc demo show.
