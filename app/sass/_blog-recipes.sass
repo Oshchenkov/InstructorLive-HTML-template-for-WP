@@ -26,6 +26,7 @@
   width: 100%
   position: sticky
   top: 100px
+  z-index: 3
 
 .recipes-status-container
   color: #fff
@@ -143,3 +144,116 @@
 
 .recipes-table-col-title
   font-family: "Gilroy-Bold"
+
+
+//
+// related-recipes-section
+//
+
+.related-recipes-section
+  padding-bottom: 100px
+  &__title
+  &__content
+
+.recipes-pallet
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 40px
+  
+.recipes-pallet-item
+  position: relative
+  overflow: hidden
+  border-radius: $bdrs-pallet
+  box-shadow: $bx-sh
+  &__bg
+    display: flex
+    height: 300px
+    &-img
+      object-position: center
+      object-fit: cover
+      width: 100%
+      height: auto
+  &__content
+    display: flex
+    flex-direction: column
+    height: calc( 100% - 300px )
+    justify-content: space-between
+    padding: 40px
+    font-family: "Gilroy-SemiBold"
+    &-title
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      font-size: 20px
+      letter-spacing: 2px
+      margin-bottom: 20px
+      line-height: 1.9
+    &-table
+    &-text
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 30px
+    &-btn
+
+.recipe-table-row
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+  &__col
+    &-title
+      text-transform: uppercase
+      font-family: "Gilroy-Bold"
+      font-size: 14px
+      letter-spacing: 2px
+      margin-bottom: 10px
+    &-text
+      font-size: 16px
+
++media-breakpoint-down($xl)
+  .recipes-pallet-item__bg
+    height: 250px
+  .recipes-pallet-item__content
+    height: calc( 100% - 250px)
+  .recipes-pallet-item__content-text
+    font-size: 14px
+    line-height: 26px
+  .recipe-table-row
+    flex-direction: column
+  .recipe-table-row__col
+    display: flex
+    justify-content: space-between
+  .recipes-pallet-item__content-title
+    font-size: 18px
+  .recipes-pallet-item__content-text
+    margin-bottom: 20px
+
++media-breakpoint-down($lg)
+  .recipes-pallet
+    grid-template-columns: repeat(2, 1fr)
+  .recipes-pallet-item__bg
+    height: 300px
+  .recipes-pallet-item__content
+    height: calc( 100% - 300px)
+
+
++media-breakpoint-down($md)
+  .related-recipes-section
+    padding-bottom: 40px
+  .recipes-pallet-item__bg
+    height: 250px
+  .recipes-pallet-item__content
+    height: calc( 100% - 250px)
+  .recipes-pallet-item__content
+    padding: 30px
+  .recipes-pallet-item__content-title
+    font-size: 16px
+  .recipe-table-row__col-title
+    font-size: 12px
+  .recipe-table-row__col-text
+    font-size: 14px
+
++media-breakpoint-down($sm)
+  .recipes-pallet
+    grid-template-columns: minmax(150px, 350px)
+    justify-content: center
+  .recipes-pallet-item__content
+    padding: 40px
