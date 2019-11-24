@@ -61,18 +61,20 @@
   grid-gap: 40px
 
 .parent-instructors-item
+  cursor: pointer
   position: relative
   overflow: hidden
   border-radius: 20px
   &__bg
     display: flex
     height: 400px
-    
+    overflow: hidden
     &-img
       width: 100%
       height: auto
       object-fit: cover
       object-position: center top
+      transition: $transition-all-long 
   &__content
     position: absolute
     top: 0
@@ -91,6 +93,12 @@
       font-family: "Gilroy-Bold"
       letter-spacing: 2px
       font-size: 40px
+
+.parent-instructors-item:hover .parent-instructors-item__bg-img,
+.parent-instructors-item:focus .parent-instructors-item__bg-img,
+.parent-instructors-item:active .parent-instructors-item__bg-img
+  transform: scale(1.2)
+
 
 +media-breakpoint-down($lg)
   .parent-instructors-item__bg
