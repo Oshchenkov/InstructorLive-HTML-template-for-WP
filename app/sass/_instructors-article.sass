@@ -86,14 +86,17 @@
   border-radius: $bdrs-pallet
   box-shadow: $bx-sh
   height: 100%
+  cursor: pointer
   &__bg
     display: flex
     height: 300px
+    overflow: hidden
     &-img
       object-position: center
       object-fit: cover
       width: 100%
       height: auto
+      transition: $transition-all-long 
   &__content
     display: flex
     flex-direction: column
@@ -115,6 +118,10 @@
 .leigh-workouts-section .pallet-item-short__bg-img
   object-position: center top
 
+.pallet-item-short:hover .pallet-item-short__bg-img,
+.pallet-item-short:active .pallet-item-short__bg-img,
+.pallet-item-short:focus .pallet-item-short__bg-img
+  transform: scale(1.2)
 
 +media-breakpoint-down($xl)
   .pallet-item-short__bg

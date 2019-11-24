@@ -375,14 +375,17 @@
   overflow: hidden
   border-radius: $bdrs-pallet
   box-shadow: $bx-sh
+  cursor: pointer
   &__bg
     display: flex
     height: 300px
+    overflow: hidden
     &-img
       object-position: center
       object-fit: cover
       width: 100%
       height: auto
+      transition: $transition-all-long 
   &__content
     display: flex
     flex-direction: column
@@ -403,6 +406,10 @@
       margin-bottom: 30px
     &-btn
 
+.programmes-item:hover .programmes-item__bg-img,
+.programmes-item:active .programmes-item__bg-img,
+.programmes-item:focus .programmes-item__bg-img
+  transform: scale(1.2)
 
 +media-breakpoint-down($xl)
   .programmes-section__content

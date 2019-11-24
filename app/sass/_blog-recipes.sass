@@ -170,11 +170,13 @@
   &__bg
     display: flex
     height: 300px
+    overflow: hidden
     &-img
       object-position: center
       object-fit: cover
       width: 100%
       height: auto
+      transition: $transition-all-long 
   &__content
     display: flex
     flex-direction: column
@@ -195,6 +197,11 @@
       line-height: 30px
       margin-bottom: 30px
     &-btn
+
+.recipes-pallet-item:hover .recipes-pallet-item__bg-img,
+.recipes-pallet-item:active .recipes-pallet-item__bg-img,
+.recipes-pallet-item:focus .recipes-pallet-item__bg-img
+  transform: scale(1.2)
 
 .recipe-table-row
   display: flex
