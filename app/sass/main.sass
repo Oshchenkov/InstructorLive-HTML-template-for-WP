@@ -59,7 +59,7 @@ body
       align-items: center
 
 
-.navbar-toggler
+#top-navbar-btn
   display: none
   &:active,
   &:hover,
@@ -149,28 +149,15 @@ body
 +media-breakpoint-down($xl)
   .top-header__nav-block-container
     display: none
-  .navbar-toggler
-    display: block
+  #top-navbar-btn
+    display: flex
 
 
 .header.open
   bottom: 0
 
-.navbar-toggler
+#top-navbar-btn
   cursor: pointer
-  &__burger
-    // display: none
-  &__close
-    width: 30px
-    height: 30px
-    line-height: 30px
-    font-size: 56px
-    display: none
-
-.navbar-toggler.open .navbar-toggler__burger
-  display: none
-.navbar-toggler.open .navbar-toggler__close
-  display: block
 
 #mobile-container
   // height: calc(100vh - 100px)
