@@ -269,3 +269,48 @@
 .pallet-round-item:active .pallet-round-item__bg-img,
 .pallet-round-item:focus .pallet-round-item__bg-img
   transform: scale(1.2)
+
+
++media-breakpoint-down($xl)
+  .pallet-round-container
+    grid-template-columns: repeat(3, 1fr)
+
++media-breakpoint-down($lg)
+  .pallet-round-container
+    grid-template-columns: repeat(2, 1fr)
+  .instructors-accent-dark__btn .btn-accent
+    font-size: 12px
+
++media-breakpoint-down($md)
+  .pallet-round-item__content
+    padding: 0 30px 30px  30px
+  .pallet-round-item__content-title
+    font-size: 16px
+  .pallet-round-item__content-text
+    font-size: 14px
+  .btn-link
+    font-size: 12px
+
++media-breakpoint-down($sm)
+  .pallet-round-container
+    grid-template-columns: repeat(1, 1fr)
+  .pallet-round-item__content
+    padding: 0 40px 40px  40px
+
+
+
+//
+// section-accent-instructors
+//
+
+
+.section-home-programmes-section
+  &__container
+    &-title
+      color: #000
+    &-pallet
+
++media-breakpoint-down($lg)
+  .programmes-section__content, 
+  .related-articles__content
+    grid-gap: 30px
