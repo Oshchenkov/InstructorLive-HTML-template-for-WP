@@ -314,3 +314,192 @@
   .programmes-section__content, 
   .related-articles__content
     grid-gap: 30px
+
+
+
+//
+// testimonials-home-section
+//
+
+.testimonials-home-section
+  position: relative
+  height: 600px
+  &__bg
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    display: flex
+    overflow: hidden
+    
+    &-img
+      width: 100%
+      height: auto
+      object-fit: cover
+      object-position: top center
+  &__container
+    height: 100%
+
+.testimonials-home-section-inner
+  height: 100%
+  position: relative
+  z-index: 2
+  display: flex
+  width: 60%
+  flex-direction: column
+  justify-content: center
+  &__title
+    margin-left: auto
+    margin-right: auto
+  &__slider
+    color: #fff
+
+.carousel-control-next, 
+.carousel-control-prev
+  width: 30px
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+  width: 30px
+  height: 30px
+
+.carousel-item
+  padding: 0 15%
+  text-align: center
+
+.carousel-indicators
+  margin-bottom: 0
+  bottom: -45px
+.carousel-indicators li
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  border: none
+  margin: 0 10px
+
+.carousel-item__text
+  margin-bottom: 30px
+  font-size: 25px
+  line-height: 1.6
+  font-family: "Gilroy-Medium"
+.carousel-item__subscription
+  font-size: 20px
+  line-height: 2
+  margin-bottom: 20px
+  font-family: "Gilroy-Medium"
+
++media-breakpoint-down($lg)
+  .testimonials-home-section-inner
+    width: 100%
+
++media-breakpoint-down($md)
+  .carousel-item__text
+    font-size: 18px
+  .carousel-item__subscription
+    font-size: 16px
+
+
+
+//
+// subscription-home-section
+//
+
+.subscription-home-section
+  position: relative
+  height: 700px
+  &__bg
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    display: flex
+    &-img
+      width: 100%
+      height: auto
+      object-position: center
+      object-fit: cover
+
+  &__container
+    position: relative
+    z-index: 2
+    background-image: $blackout-img
+    height: 100%
+
+.subscription-home-section__container>.container
+  height: 100%
+
+.subscription-content
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 40px
+  &__text-block
+    &-title
+      color: #fff
+    &-subtitle
+      color: #fff
+      margin-bottom: 10px
+      margin-top: 10px
+      font-size: 20px
+      font-family: "Gilroy-Regular"
+  &__plan-block
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 40px
+    text-align: center
+
+.subscription-plan-item
+  padding: 30px
+  border: 2px solid #ffffff
+  border-radius: 20px
+  font-family: "Gilroy-Medium"
+  &__title
+    
+  &__list
+    margin-bottom: 20px
+  &__price
+    display: flex
+    align-items: baseline
+    justify-content: center
+    color: #fff
+    margin-bottom: 20px
+    line-height: normal
+    &-b
+      margin-right: 10px
+      font-size: 30px
+      font-family: "Gilroy-Bold"
+      color: #fff
+  &__btn
+
+.subscription-ul-property
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  &__li
+    color: #fff
+    padding: 10px 0
+    font-size: 16px
+    line-height: 1.6
+
+.btn-accent.btn-accent_medium
+  display: block
+  padding: 16px 40px
++media-breakpoint-down($lg)
+  .btn-accent.btn-accent_medium
+    font-size: 12px
++media-breakpoint-down($md)
+  .btn-accent.btn-accent_medium
+    padding: 10px 20px
+
+.subscription-plan-item__title.h5
+  margin-bottom: 20px
+
++media-breakpoint-down($xl)
+  .subscription-content
+    grid-template-columns: 30% 70%
+  .subscription-plan-item
+    padding: 30px 15px
+  .subscription-content__text-block-title.content-title.h1
+    font-size: 40px
+  .subscription-plan-item__title.h5
+    font-size: 34px

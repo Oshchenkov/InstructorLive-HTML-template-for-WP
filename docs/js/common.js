@@ -43,4 +43,9 @@ $(document).ready(function() {
       );
     });
   }
+
+  // Bootstrap carousel
+  $("#testimonialsCarouselSlider").carousel({
+    interval: 0
+  });
 });
