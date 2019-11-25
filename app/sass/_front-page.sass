@@ -106,3 +106,166 @@
     padding: 20px 0
   .partners-small-section__container
     grid-template-columns: repeat(3, 1fr)
+
+
+//
+// section-full-height-content
+//
+
+.section-full-height-content
+  &__container
+
+.section-full-height-content-row
+  display: flex
+  &__text-block
+    width: 50%
+    display: flex
+    align-items: center
+    // justify-content: center
+  &__image-block
+    width: 50%
+    display: flex
+   
+    &-img
+      object-fit: cover
+      width: 100%
+      height: calc( 100vh - 100px) // 100px height of the top menu
+
+.section-full-height-content-row_first .section-full-height-content-row__text-block
+  order: 2
+.section-full-height-content-row_first .section-full-height-content-row__image-block
+  order: 1
+.section-full-height-content-row_second
+.section-full-height-content-row_third .section-full-height-content-row__text-block
+  order: 2
+.section-full-height-content-row_third .section-full-height-content-row__image-block
+  order: 1
+
+.section-row-content
+  padding: 5vh 10vw
+  &__title
+    margin-bottom: 20px
+    font-family: "Gilroy-Bold"
+    font-size: 30px
+    line-height: 1.5
+  &__text
+    font-family: "Gilroy-Medium"
+    margin-bottom: 60px
+    font-size: 20px
+    line-height: 2
+  &__btn
+
++media-breakpoint-down($lg)
+  .section-row-content
+    padding: 2vh 5vw
+  .section-row-content__title
+    font-size: 24px
+  .section-row-content__text
+    font-size: 16px
+
++media-breakpoint-down($sm)
+  .section-full-height-content-row
+    flex-direction: column
+  .section-full-height-content-row__text-block
+    width: 100%
+  .section-full-height-content-row__image-block
+    width: 100%
+  .section-full-height-content-row__image-block-img
+    height: 50vh
+  .section-full-height-content-row_second .section-full-height-content-row__text-block
+    order: 2
+  .section-full-height-content-row_second .section-full-height-content-row__image-block
+    order: 1
+  .section-row-content
+    padding: 40px 15px
+  .section-row-content__text
+    margin-bottom: 30px
+
+
+//
+// section-full-height-content
+//
+
+.section-accent-instructors
+  background-color: $accent-dark-color
+  color: #fff
+  &__container
+
+.instructors-accent-dark
+  &__title
+  &__pallet
+    margin-bottom: 60px
+  &__btn
+    text-align: center
+
+.instructors-accent-dark__btn .btn-accent
+  padding: 16px 40px
+
++media-breakpoint-down($md)
+  .instructors-accent-dark__btn .btn-accent
+    padding: 10px 20px
+
+
+//
+// section-accent-instructors
+//
+
+.section-accent-instructors
+  &__container
+
+.instructors-accent-dark
+  &__title
+  &__pallet
+  &__btn
+
+.pallet-round-container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 40px
+
+.pallet-round-item
+  color: #000
+  background-color: #fff
+  position: relative
+  overflow: hidden
+  border-radius: $bdrs-pallet
+  box-shadow: $bx-sh
+  height: 100%
+  cursor: pointer
+  &__bg
+    margin: 40px auto 20px
+    display: flex
+    height: 150px
+    width: 150px
+    border-radius: 50%
+    overflow: hidden
+    &-img
+      object-position: center
+      object-fit: cover
+      width: 100%
+      height: auto
+      transition: $transition-all-long 
+  &__content
+    display: flex
+    flex-direction: column
+    text-align: center
+    padding: 40px
+    padding-top: 0
+    &-title
+      margin-bottom: 10px
+      letter-spacing: 2px
+      text-transform: uppercase
+      font-size: 20px
+      line-height: 2
+      font-family: "Gilroy-Bold"
+    &-text
+      font-size: 18px
+      line-height: 1.7
+      font-family: "Gilroy-Medium"
+      margin-bottom: 30px
+    &-btn
+
+.pallet-round-item:hover .pallet-round-item__bg-img,
+.pallet-round-item:active .pallet-round-item__bg-img,
+.pallet-round-item:focus .pallet-round-item__bg-img
+  transform: scale(1.2)
