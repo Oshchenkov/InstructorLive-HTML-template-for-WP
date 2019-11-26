@@ -406,7 +406,6 @@
 
 .subscription-home-section
   position: relative
-  height: 700px
   &__bg
     position: absolute
     top: 0
@@ -494,6 +493,11 @@
 .subscription-plan-item__title.h5
   margin-bottom: 20px
 
+
+@media (max-width: 1399px)
+  .subscription-content
+    grid-template-columns: 40% 60%
+
 +media-breakpoint-down($xl)
   .subscription-content
     grid-template-columns: 30% 70%
@@ -503,3 +507,13 @@
     font-size: 40px
   .subscription-plan-item__title.h5
     font-size: 34px
+
++media-breakpoint-down($lg)
+  .subscription-content
+    grid-template-columns: 1fr
+
++media-breakpoint-down($md)
+  .subscription-content__plan-block
+    grid-template-columns: 1fr
+  .subscription-plan-item
+    padding: 30px
