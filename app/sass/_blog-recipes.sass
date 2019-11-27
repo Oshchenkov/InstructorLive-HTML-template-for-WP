@@ -231,6 +231,12 @@
       font-size: 16px
 
 +media-breakpoint-down($xl)
+  .blog-content
+    display: none
+  .blog-recipes-content-container
+    margin-bottom: 50px
+  .blog-recipes-content-container:last-child
+    margin-bottom: 0
   .recipes-pallet-item__bg
     height: 250px
   .recipes-pallet-item__content
@@ -258,7 +264,11 @@
 
 
 +media-breakpoint-down($md)
-
+  .blog-recipes-content-container
+    margin-bottom: 30px
+  .recipes-table,
+  .blog-recipes-content-container__title
+    margin-top: 20px
   .recipes-pallet-item__bg
     height: 250px
   .recipes-pallet-item__content
@@ -278,3 +288,7 @@
     justify-content: center
   .recipes-pallet-item__content
     padding: 25px
+
++media-breakpoint-up($xl)
+  .blog-content_mobile
+    display: none
