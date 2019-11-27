@@ -152,7 +152,10 @@
 .recipes-table-col-title
   font-family: "Gilroy-Bold"
 
-
++media-breakpoint-down($sm)
+  .recipes-table-title__col
+    font-size: 12px
+  
 //
 // related-recipes-section
 //
@@ -274,4 +277,4 @@
     grid-template-columns: minmax(150px, 350px)
     justify-content: center
   .recipes-pallet-item__content
-    padding: 40px
+    padding: 25px

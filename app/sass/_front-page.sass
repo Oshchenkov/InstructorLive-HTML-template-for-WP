@@ -25,7 +25,13 @@
     letter-spacing: 2px
     line-height: normal
     padding: 10px 0
+    text-overflow: ellipsis
+    white-space: nowrap
+    overflow: hidden
 
++media-breakpoint-down($sm)
+  .offer-info-container__text
+    font-size: 10px
 
 //
 // Hero section
@@ -181,10 +187,11 @@
   .section-full-height-content-row_second .section-full-height-content-row__image-block
     order: 1
   .section-row-content
-    padding: 40px 15px
+    padding: 40px 25px
   .section-row-content__text
     margin-bottom: 30px
-
+  .section-row-content
+    text-align: center
 
 //
 // section-full-height-content
@@ -407,7 +414,16 @@
 
 .carousel-indicators
   bottom: 50px
-
++media-breakpoint-down($sm)
+  .testimonials-home-section
+    height: 400px
+  .testimonials-home-section-inner__title
+    padding-top: 40px
+  .carousel-control-prev,
+  .carousel-control-next
+    display: none
+  .carousel-item
+    padding: 0
 
 //
 // subscription-home-section
@@ -533,7 +549,12 @@
     grid-template-columns: 1fr
   .subscription-plan-item
     padding: 30px
-
+  .subscription-plan-item__title.h5
+    font-size: 24px
+  .subscription-plan-item__price-b
+    font-size: 24px
+  .hero-text-image-section
+    text-align: center
 
 
 .programmes-item__content-text,

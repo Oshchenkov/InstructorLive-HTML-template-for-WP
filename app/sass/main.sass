@@ -14,6 +14,12 @@
 body
   font-family: Gilroy-Regular
 
++media-breakpoint-down($lg)
+  .container
+    padding-left: 25px
+    padding-right: 25px
+
+
 @media (min-width: 1400px)
   .container
     padding-left: 3vw
@@ -247,11 +253,11 @@ body
 +media-breakpoint-down($md)
   .section_padding,
   .section_padding_tile
-    padding: 40px 0
+    padding: 50px 0
   .section_padding_bottom
-    padding-bottom: 40px
+    padding-bottom: 50px
   .section_padding_top
-    padding-top: 40px
+    padding-top: 50px
 
 .btn-link
   font-size: 16px
@@ -353,7 +359,9 @@ body
 
 +media-breakpoint-down($md)
   .h1
-    font-size: 36px
+    // font-size: 36px
+    font-size: 30px
+    line-height: 1.5
   .h2
     font-size: 30px
   .h3
@@ -431,7 +439,8 @@ body
   .footer-widget__col-logo>.logo-block
     margin: auto
 
-
+.footer-widget__col-logo
+  margin-bottom: 50px
 
 
 
@@ -550,6 +559,18 @@ body
 +media-breakpoint-down($sm)
   .h5.white.blog
     width: 100%
+
+
+.hamburger-box,
+.hamburger-inner, 
+.hamburger-inner::before,
+.hamburger-inner::after
+  width: 30px
+
+
+
+
+
 
 @import "blog" 
 @import "blog-article" 
