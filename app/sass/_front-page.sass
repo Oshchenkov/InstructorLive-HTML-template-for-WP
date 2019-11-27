@@ -11,6 +11,9 @@
 
 .offer-info-section
   background-color: $accent-color
+  position: sticky
+  top: 100px
+  z-index: 11
 
 .offer-info-container
   color: #fff
@@ -93,6 +96,7 @@
     grid-template-columns: repeat(6, 1fr)
     grid-gap: 40px
     align-items: center
+    justify-items: center
 
 .partners-small-item
   max-width: 120px
@@ -345,15 +349,14 @@
   height: 100%
   position: relative
   z-index: 2
-  display: flex
   width: 60%
-  flex-direction: column
-  justify-content: center
   &__title
     margin-left: auto
     margin-right: auto
+    padding-top: 120px
   &__slider
     color: #fff
+    padding-bottom: 60px
 
 .carousel-control-next, 
 .carousel-control-prev
@@ -398,6 +401,12 @@
   .carousel-item__subscription
     font-size: 16px
 
+
+.carousel
+  position: initial
+
+.carousel-indicators
+  bottom: 50px
 
 
 //
@@ -479,6 +488,13 @@
     padding: 10px 0
     font-size: 16px
     line-height: 1.6
+    display: flex
+    justify-content: center
+  &__tick
+    width: 30px
+    height: auto
+    display: block
+    margin-right: 10px
 
 .btn-accent.btn-accent_medium
   display: block
@@ -517,3 +533,13 @@
     grid-template-columns: 1fr
   .subscription-plan-item
     padding: 30px
+
+
+
+.programmes-item__content-text,
+.pallet-item-short__content-text,
+.recipes-pallet-item__content-text
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical

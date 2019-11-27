@@ -143,6 +143,10 @@
     font-size: 10px
 
 
++media-breakpoint-up($lg)
+  .hero-section__col:first-child
+    padding-right: 45px
+
 //
 // categories-section
 //
@@ -156,7 +160,7 @@
     position: relative
     overflow: hidden
     border-radius: 30px
-    
+    cursor: pointer
     &-bg
       display: flex
       height: 400px
@@ -164,6 +168,7 @@
         object-fit: cover
         object-position: center
         height: auto
+        transition: $transition-all-long 
         width: 100%
     &-content
       position: absolute
@@ -185,7 +190,10 @@
         font-size: 25px
         text-transform: uppercase
 
-
+.categories-section__item:hover .categories-section__item-bg-img,
+.categories-section__item:active .categories-section__item-bg-img,
+.categories-section__item:focus .categories-section__item-bg-img
+  transform: scale(1.2)
 
 +media-breakpoint-down($lg)
   .categories-section
@@ -264,6 +272,10 @@
 .blog-articles-item:active .blog-articles-item__bg-img,
 .blog-articles-item:focus .blog-articles-item__bg-img
   transform: scale(1.2)
+.blog-articles-item:hover .blog-articles-item__content-title,
+.blog-articles-item:active .blog-articles-item__content-title,
+.blog-articles-item:focus .blog-articles-item__content-title
+  color: $accent-color
 
 
 +media-breakpoint-down($xl)
@@ -318,6 +330,7 @@
       object-fit: cover
       width: 100%
       height: auto
+      transition: $transition-all-long 
   &__content
     position: absolute
     left: 0
@@ -338,6 +351,10 @@
       font-size: 25px
       text-transform: uppercase
 
+.recipes-item:hover .recipes-item__bg-img,
+.recipes-item:active .recipes-item__bg-img,
+.recipes-item:focus .recipes-item__bg-img
+  transform: scale(1.2)
 
 +media-breakpoint-down($xl)
   .recipes-item__bg
@@ -410,6 +427,10 @@
 .programmes-item:active .programmes-item__bg-img,
 .programmes-item:focus .programmes-item__bg-img
   transform: scale(1.2)
+.programmes-item:hover .programmes-item__content-title,
+.programmes-item:active .programmes-item__content-title,
+.programmes-item:focus .programmes-item__content-title
+  color: $accent-color
 
 +media-breakpoint-down($xl)
   .programmes-section__content

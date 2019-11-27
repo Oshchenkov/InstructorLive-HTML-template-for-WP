@@ -38,6 +38,7 @@
 .recipes-status-item
   display: flex
   align-items: center
+  justify-content: center
   &__icon
     margin-right: 20px
     width: 50px
@@ -121,6 +122,9 @@
   font-family: "Gilroy-Bold"
   text-transform: uppercase
   font-size: 16px
+  align-items: center
+  border-bottom: 1px dotted #ccc
+  padding-bottom: 5px
   &__col
     text-align: center
     letter-spacing: 2px
@@ -137,6 +141,7 @@
 .recipes-table__row-sub
   display: grid
   grid-template-columns: 2fr 1fr 1fr
+  border-bottom: 1px dotted #ccc
   &-col
 
 .recipes-table__row-sub-col
@@ -153,7 +158,6 @@
 //
 
 .related-recipes-section
-  padding-bottom: 100px
   &__title
   &__content
 
@@ -167,6 +171,7 @@
   overflow: hidden
   border-radius: $bdrs-pallet
   box-shadow: $bx-sh
+  cursor: pointer
   &__bg
     display: flex
     height: 300px
@@ -202,6 +207,11 @@
 .recipes-pallet-item:active .recipes-pallet-item__bg-img,
 .recipes-pallet-item:focus .recipes-pallet-item__bg-img
   transform: scale(1.2)
+
+.recipes-pallet-item:hover .recipes-pallet-item__content-title,
+.recipes-pallet-item:active .recipes-pallet-item__content-title,
+.recipes-pallet-item:focus .recipes-pallet-item__content-title
+  color: $accent-color
 
 .recipe-table-row
   display: flex
@@ -245,8 +255,7 @@
 
 
 +media-breakpoint-down($md)
-  .related-recipes-section
-    padding-bottom: 40px
+
   .recipes-pallet-item__bg
     height: 250px
   .recipes-pallet-item__content
