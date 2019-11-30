@@ -127,13 +127,14 @@
 
 .section-full-height-content-row
   display: flex
+  padding: 30px 0
   &__text-block
-    width: 50%
+    width: 40%
     display: flex
     align-items: center
     // justify-content: center
   &__image-block
-    width: 50%
+    width: 60%
     display: flex
    
     &-img
@@ -151,8 +152,15 @@
 .section-full-height-content-row_third .section-full-height-content-row__image-block
   order: 1
 
+.section-full-height-content-row_first .section-full-height-content-row__image-block-img
+  object-position: right bottom
+.section-full-height-content-row_second .section-full-height-content-row__image-block-img
+  object-position: left bottom
+.section-full-height-content-row_third .section-full-height-content-row__image-block-img
+  object-position: right bottom
+  
 .section-row-content
-  padding: 5vh 10vw
+  padding: 5vh
   &__title
     margin-bottom: 20px
     font-family: "Gilroy-Bold"
