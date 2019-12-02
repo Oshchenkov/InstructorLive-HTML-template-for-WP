@@ -43,7 +43,7 @@
   // max-width: 650px
 
 .front-page-hero .blog-hero-full-slide__subtitle
-  font-size: 30px
+  font-size: 24px
   line-height: 1.5
 
 .blog-hero-full-slide__logo
@@ -72,7 +72,8 @@
 .front-page-hero .blog-hero-full-slide__btn a
   margin-bottom: 20px
 
-.front-page-hero .blog-hero-full-slide__btn
+
+.blog-hero-full-slide__TITLE.h1
   margin-bottom: 20px
 
 +media-breakpoint-down($md)
@@ -86,6 +87,11 @@
   .blog-hero-full-slide__logo
     text-align: center
     margin: auto
+  .blog-hero-full-slide__btn
+    display: flex
+    flex-direction: column
+  .front-page-hero .blog-hero-full-slide__btn a:last-child
+    margin-left: 0
 
 
 //
@@ -127,7 +133,7 @@
 
 .section-full-height-content-row
   display: flex
-  padding: 30px 0
+  padding: 100px 0 0 0
   &__text-block
     width: 40%
     display: flex
@@ -141,6 +147,8 @@
       object-fit: cover
       width: 100%
       height: calc( 100vh - 100px) // 100px height of the top menu
+.section-full-height-content-row.section-full-height-content-row_third
+  padding-bottom: 100px
 
 .section-full-height-content-row_first .section-full-height-content-row__text-block
   order: 2
@@ -153,11 +161,14 @@
   order: 1
 
 .section-full-height-content-row_first .section-full-height-content-row__image-block-img
-  object-position: right bottom
+  object-position: center
+  object-fit: contain
 .section-full-height-content-row_second .section-full-height-content-row__image-block-img
-  object-position: left bottom
+  object-position: center
+  object-fit: contain
 .section-full-height-content-row_third .section-full-height-content-row__image-block-img
-  object-position: right bottom
+  object-position: center
+  object-fit: contain
   
 .section-row-content
   padding: 5vh
@@ -174,6 +185,10 @@
   &__btn
 
 +media-breakpoint-down($lg)
+  .section-full-height-content-row
+    padding-top: 40px
+  .section-full-height-content-row.section-full-height-content-row_third
+    padding-bottom: 40px
   .section-row-content
     padding: 2vh 5vw
   .section-row-content__title
@@ -181,6 +196,8 @@
   .section-row-content__text
     font-size: 16px
 
++media-breakpoint-down($md)
+  
 +media-breakpoint-down($sm)
   .section-full-height-content-row
     flex-direction: column
@@ -201,6 +218,16 @@
   .section-row-content
     text-align: center
 
+  .section-full-height-content-row_first .section-full-height-content-row__image-block-img
+    padding-left: 25px
+    padding-right: 15px
+  .section-full-height-content-row_second .section-full-height-content-row__image-block-img
+    padding-left: 15px
+    padding-right: 25px
+
+  .section-full-height-content-row_third .section-full-height-content-row__image-block-img
+    padding-left: 25px
+    padding-right: 15px
 //
 // section-full-height-content
 //

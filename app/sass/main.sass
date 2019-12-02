@@ -81,33 +81,34 @@ body
   padding: 0
   margin: 0 20px
   &__li
-  &__a
-    display: inline-block
-    padding: 10px 15px
-    text-transform: uppercase
-    font-family: "Gilroy-Bold"
-    font-size: 12px
-    letter-spacing: 2px
-    color: #000
-    transition: $transition-color
-    &:active,
-    &:hover,
-    &:focus
-      text-decoration: none
-      color: $accent-color
+.top-nav__a,
+.top-nav .menu-item>a
+  display: inline-block
+  padding: 10px 15px
+  text-transform: uppercase
+  font-family: "Gilroy-Bold"
+  font-size: 12px
+  letter-spacing: 2px
+  color: #000
+  transition: $transition-color
+  &:active,
+  &:hover,
+  &:focus
+    text-decoration: none
+    color: $accent-color
 
 .top-nav-btn-block
   display: flex
   list-style: none
   padding: 0
   margin: 0
-  &__li
-  &__a
-    display: inline-block
-    text-transform: uppercase
-    font-family: "Gilroy-Bold"
-    font-size: 12px
-    letter-spacing: 2px
+.top-nav-btn-block__a,
+.top-nav-btn-block .menu-item>a
+  display: inline-block
+  text-transform: uppercase
+  font-family: "Gilroy-Bold"
+  font-size: 12px
+  letter-spacing: 2px
 .top-nav-btn-block__li:first-child>a
   margin-left: 0
 .top-nav-btn-block__li:last-child>a
@@ -188,26 +189,28 @@ body
   padding-left: 0
   margin-bottom: 0
   &__li
-  &__a
-    display: inline-block
-    width: 100%
-    margin: 0
-    font-size: 16px
-    letter-spacing: 2px
-    font-family: "Gilroy-Bold"
-    padding: 10px 15px
-    line-height: 16px
-    margin-bottom: 15px
-    color: $black-color
-    text-align: center
-    text-transform: uppercase
-    &:active,
-    &:hover,
-    &:focus
-      text-decoration: none
-      color: $accent-color
+.vertical-nav__a,
+.vertical-nav .menu-item>a
+  display: inline-block
+  width: 100%
+  margin: 0
+  font-size: 16px
+  letter-spacing: 2px
+  font-family: "Gilroy-Bold"
+  padding: 10px 15px
+  line-height: 16px
+  margin-bottom: 15px
+  color: $black-color
+  text-align: center
+  text-transform: uppercase
+  &:active,
+  &:hover,
+  &:focus
+    text-decoration: none
+    color: $accent-color
 
-.vertical-nav__li:last-child>a
+.vertical-nav__li:last-child>a,
+.vertical-nav>li:last-child>a
   margin-bottom: 0
 
 .vertical-nav .btn-il
@@ -227,7 +230,8 @@ body
   .mobile-nav-container__btn .vertical-nav
     flex-direction: row
     justify-content: center
-  .mobile-nav-container__btn .vertical-nav__li
+  .mobile-nav-container__btn .vertical-nav__li,
+  .mobile-nav-container__btn .vertical-nav>li
     margin-left: 20px
     margin-right: 20px
 
@@ -398,20 +402,21 @@ body
 .widget-nav
   list-style: none
   padding-left: 0
-  &__li
-  &__a
-    font-family: "Gilroy-Medium"
-    font-size: 16px
-    transition: $transition-color
-    color: $black-color
-    display: inline-block
-    padding: 5px 0
-    margin-bottom: 10px
-    &:active,
-    &:hover,
-    &:focus
-      color: $accent-color
-      text-decoration: none
+.widget-nav__li
+.widget-nav__a,
+.widget-nav .menu-item>a
+  font-family: "Gilroy-Medium"
+  font-size: 16px
+  transition: $transition-color
+  color: $black-color
+  display: inline-block
+  padding: 5px 0
+  margin-bottom: 10px
+  &:active,
+  &:hover,
+  &:focus
+    color: $accent-color
+    text-decoration: none
 
 .copyright
   font-family: "Gilroy-Medium"
