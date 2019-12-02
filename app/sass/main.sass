@@ -115,7 +115,9 @@ body
   margin-right: 0
 
 .btn-il,
-.vertical-nav .btn-il
+.vertical-nav .btn-il,
+.top-nav-btn-block .menu-item>a,
+.vertical-nav.vertical-nav_mobile .menu-item>a
   padding: 10px 15px
   background-color: $accent-color 
   color: $white-color 
@@ -133,8 +135,13 @@ body
     color: $white-color 
     background-color: $accent-dark-color 
     border: 2px solid $accent-dark-color 
+
+
+
 .btn-il_invert,
-.vertical-nav .btn-il_invert
+.vertical-nav .btn-il_invert,
+.top-nav-btn-block .menu-item.btn-il_white_blue>a,
+.vertical-nav.vertical-nav_mobile .menu-item.btn-il_white_blue>a
   background-color: transparent
   color: $accent-color
   &:active,
@@ -213,7 +220,8 @@ body
 .vertical-nav>li:last-child>a
   margin-bottom: 0
 
-.vertical-nav .btn-il
+.vertical-nav .btn-il,
+.vertical-nav.vertical-nav_mobile .menu-item>a
   font-size: 16px
   margin-left: 0
   margin-right: 0
