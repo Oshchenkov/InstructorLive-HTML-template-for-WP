@@ -255,6 +255,10 @@
       width: 100%
       height: auto
       transition: $transition-all-long 
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
       
   &__content
     padding: 40px
@@ -412,6 +416,12 @@
   border-radius: $bdrs-pallet
   box-shadow: $bx-sh
   cursor: pointer
+  color: #000
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
+    color: #000
   &__bg
     display: flex
     height: 300px
