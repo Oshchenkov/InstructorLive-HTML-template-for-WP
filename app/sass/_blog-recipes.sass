@@ -87,9 +87,8 @@
 //
 
 .blog-recipes-content
-  display: grid
-  grid-template-columns: 1fr 1.5fr
-  grid-gap: 60px 120px
+  column-count: 2
+  column-gap: 60px
   
 .blog-recipes-content-container
   margin-bottom: 80px
@@ -113,6 +112,7 @@
   grid-template-columns: 1fr
   grid-gap:  40px 0
   margin: 40px 0 0
+  break-inside: avoid-column
   &__row
 
 .recipes-table-title
@@ -231,10 +231,24 @@
       font-size: 16px
 
 +media-breakpoint-down($xl)
-  .blog-content
-    display: none
+  .blog-recipes-content
+    display: flex
+    column-count: auto
+    column-gap: initial
+    flex-direction: column
+
+  .recipe-info
+    order: 1
+  .recipe-ingredients
+    order: 2
+  .recipe-table
+    order: 3
+  .recipe-method
+    order: 4
+
   .blog-recipes-content-container
     margin-bottom: 50px
+    
   .blog-recipes-content-container:last-child
     margin-bottom: 0
   .recipes-pallet-item__bg
